@@ -1,9 +1,9 @@
 # DESAFIO: Balanceo de Carga
-# EZEQUIEL PETRONE
+## EZEQUIEL PETRONE
 
 Código auto-comentado!
 
-## Comentarios de este dseafío:
+## Comentarios de este desafío:
 
 La cantidad de Núcleos de mi máquina la calculo en config/config
 
@@ -31,16 +31,16 @@ Incluí en la raíz del proyecto el nginx.conf para que vean cómo lo configuré
 Comandos con los que fui jugando para levantar todos los servers en cuestión:
 
 Usando Node levanté el server en localhost:8080 en modo CLUSTER de la siguiente manera:
-node server1.js -m CLUSTER
+- node server1.js -m CLUSTER
 
 Usando Forever levanté el server en localhost:8081 en modo FORK de la siguiente manera:
-forever start server1.js -p 8081
+- forever start server1.js -p 8081
 
 Usando PM2 levanté el server en localhost:8082 y localhost:8083 en modo FORK y el server en modo CLUSTER en localhost:8084 y localhost:8085 de la siguiente manera:
-pm2 start server2.js --name="serverA" --watch -- -p 8082
-pm2 start server2.js --name="serverB" --watch -- -p 8083
-pm2 start server2.js --name="serverC" --watch -i max -- -p 8084
-pm2 start server2.js --name="serverD" --watch -i max -- -p 8085
+- pm2 start server2.js --name="serverA" --watch -- -p 8082
+- pm2 start server2.js --name="serverB" --watch -- -p 8083
+- pm2 start server2.js --name="serverC" --watch -i max -- -p 8084
+- pm2 start server2.js --name="serverD" --watch -i max -- -p 8085
 
 ## Comentarios del entregable anterior:
 
