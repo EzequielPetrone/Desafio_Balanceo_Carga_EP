@@ -1,0 +1,43 @@
+{{#if productos}}
+<table id="tablaProd" class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">
+        #ID
+      </th>
+      <th scope="col">
+        Title
+      </th>
+      <th scope="col">
+        Price
+      </th>
+      <th scope="col">
+        Image
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each productos}}
+    <tr class="align-middle">
+      <td>
+        {{this.id}}
+      </td>
+      <td>
+        {{this.title}}
+      </td>
+      <td>
+        $
+        {{this.price}}
+      </td>
+      <td>
+        <img style="height: 4rem" class="mh-100" src="{{this.thumbnail}}" alt="{{this.title}}" />
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{else}}
+<h3 id="noProd">
+  No hay productos creados aún...
+</h3>
+{{/if}}

@@ -1,0 +1,14 @@
+{{! <div class="alert alert-danger sticky-top" role="alert"> }}
+<div class="alert alert-warning">
+  <h2 class="font-weight-bold">
+    Chau {{username}}! Gracias por tu visita!
+  </h2>
+  <h6>
+    Será redirigido a la pantalla principal en unos segundos...
+  </h6>
+</div>
+<script>
+  setTimeout(()=>{
+        location.href = '/';
+    }, 3000);
+</script>

@@ -1,0 +1,39 @@
+<div class="container p-3">
+  <h2 class="my-3">
+    SIGN UP
+  </h2>
+  <form class="form p-2" role="form" action="/signup" method="post" autocomplete="off">
+    <div class="mb-3">
+      <label for="email" class="form-label">
+        Email
+      </label>
+      <input required type="text" class="form-control" name="email" />
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">
+        Password
+      </label>
+      <input required type="password" class="form-control" name="password" />
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">
+        Nombre
+      </label>
+      <input required type="text" class="form-control" name="name" />
+    </div>
+    <button type="submit" class="btn btn-success">
+      SIGN UP
+    </button>
+  </form>
+  <hr />
+  <form action="/login" class="py-2">
+    <h3 class="my-2 pb-2">
+      ¿Ya tienes cuenta?
+    </h3>
+    <div class="px-2">
+      <button class="btn btn-primary my-2">
+        LOGIN
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<div class="alert alert-danger">
+  <h2 class="font-weight-bold">
+    ROUTING ERROR
+  </h2>
+  <h4>
+    Ruta {{originalUrl}} (Método {{method}}) no implementada
+  </h4>
+  <h6>
+    Será redirigido a la pantalla principal en unos segundos...
+  </h6>
+</div>
+<script>
+  setTimeout(()=>{
+        location.href = '/';
+    }, 3000);
+</script>
