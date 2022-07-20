@@ -52,7 +52,7 @@ app.use(session({
     secret: 'clave_test_eze',
     cookie: {
         httpOnly: true,
-        secure: true,
+        secure: false,
         maxAge: EXP_TIME
     },
     rolling: true,
